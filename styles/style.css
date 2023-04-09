@@ -1,0 +1,54 @@
+nav {
+    background: #30343F;
+    color: #FFFFFF;
+}
+
+.f-brand {
+    display: inline;
+}
+
+nav li {
+    list-style: none;
+    display:inline;
+    padding-left:3px;
+    padding-right:3px;
+}
+
+li {
+    list-style: none;
+}
+
+li a:link {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+li a:visited {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+article a:link {
+    text-decoration: none;
+    color: #111111;
+}
+
+article a:visited {
+    text-decoration: none;
+    color: #111111;
+}
+
+.banner {
+    background-image: url("/img/funkos-banner.webp");
+    margin-top: 0;
+    color: #FFFFFF;
+}
+
+footer {
+    background: #30343F;
+    color: #FFFFFF;
+}
+
+.copy {
+    text-align: center;
+}
