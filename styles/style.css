@@ -1,6 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Raleway:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
+
+
+/* Normalización de estilos */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Inter', sans-serif;
+}
+
 nav {
     background: #30343F;
     color: #FFFFFF;
+    display: grid;
+    grid-template-areas: "n-picture n-ul";
+}
+
+nav picture {
+    grid-area: n-picture;
+    width: 2rem;
+}
+
+nav ul {
+    grid-area: n-ul;
+    font-size: 1.6em;
+    text-align: right;
+    margin-top: 1em;
+}
+
+#icon {
+    width: 2.3rem;    
+}
+
+li {
+    list-style: none;
 }
 
 .f-brand {
@@ -8,14 +45,9 @@ nav {
 }
 
 nav li {
-    list-style: none;
     display:inline;
     padding-left:3px;
     padding-right:3px;
-}
-
-li {
-    list-style: none;
 }
 
 li a:link {
@@ -39,9 +71,91 @@ article a:visited {
 }
 
 .banner {
-    background-image: url("/img/funkos-banner.webp");
-    margin-top: 0;
+    background-image: url("../img/funkos-banner.webp");
+    background-position: top;
+    background-size: cover;
     color: #FFFFFF;
+    height: 20rem;
+    font-size: 2em;
+    padding-left: 5em;
+    padding-top: 3em;
+}
+
+main {
+    display: grid;
+    grid-template-areas: 
+    "s1"
+    "s2"
+    "s3";
+    margin-right: 30em;
+    margin-left: 30em;
+}
+
+#s1 {
+    grid-area: s1;
+    display: grid;
+    grid-template-areas: "d1 i1";
+}
+
+#d1 {
+    grid-area: d1;
+}
+
+#i1 {
+    grid-area: i1;
+}
+
+#s2 {
+    grid-area: s2;
+    display: grid;
+    grid-template-areas: "i2 d2";
+
+}
+
+#d2 {
+    grid-area: d2;
+}
+
+#i2 {
+    grid-area: i2;
+}
+
+#s3 {
+    grid-area: s3;
+    display: grid;
+    grid-template-areas: "d3 i3";
+}
+
+#d3 {
+    grid-area: d3;
+}
+
+#i3 {
+    grid-area: i3;
+}
+
+section article {
+    margin-top: 15em;
+    margin-left: 9.5em;
+    padding-right: 24.5em;
+}
+
+section picture img{
+    width: 57rem;
+}
+
+article h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 4.5em;
+    margin-bottom: 0.5em;
+}
+
+article p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 2em;
+    margin-bottom: 0.5em;
 }
 
 footer {
