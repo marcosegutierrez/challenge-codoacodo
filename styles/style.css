@@ -141,6 +141,11 @@ main {
     margin-left: 30em;
 }
 
+.pages a:visited, .pages a:link {
+    color: var(--dark-solid);
+    font-size: var(--font-display);
+}
+
 #s1 {
     grid-area: s1;
     display: grid;
