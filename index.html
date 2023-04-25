@@ -11,24 +11,35 @@
 
 <body>
     <header>
-        <nav>
-            <picture>
+        <nav class="navbar container">
+            <picture class="navbar__logo">
                 <a href="./index.html">
                     <img src="img/branding/logo_light_horizontal.svg" class="f-brand" alt="logo funkshop header">
                 </a>
             </picture>
-            <ul>
-                <li>
-                    <a href="">SHOP</a>
+            <ul class="navbar__menu">
+                <li class="navbar__item with__submenu">
+                    <a href="#" class="navbar__link with-icon">SHOP <iconify-icon icon="tabler:chevron-down"></iconify-icon></a>
+                    <ul class="submenu">
+                        <li class="submenu__link">
+                            <a href="" class="submenu__item">Funkos</a>
+                        </li>
+                        <li class="submenu__link">
+                            <a href="" class="submenu__item">Remeras</a>
+                        </li>
+                        <li class="submenu__link">
+                            <a href="" class="submenu__item">Llaveros</a>
+                        </li>
+                    </ul>
                 </li>
-                <li>
-                    <a href="">CONTACTO</a>
+                <li class="navbar__item">
+                    <a href="" class="navbar__link">CONTACTO</a>
                 </li>
-                <li>
-                    <a href="">LOGIN</a>
+                <li class="navbar__item">
+                    <a href="" class="navbar__link">LOGIN</a>
                 </li>
-                <li>
-                    <a href=""><img src="img/icons/cart-icon.svg" alt="icono de carrito" id="icon"></a>
+                <li class="navbar__item">
+                    <a class="navbar__cart"><img src="img/icons/cart-icon.svg" alt="icono de carrito"></a>
                 </li>
             </ul>
         </nav>
@@ -144,6 +155,7 @@
         </section>
         <p class="copy">All rights reserved 2023 - Funkoshop &copy;</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
 </body>
 
 </html>
