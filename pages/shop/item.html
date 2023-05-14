@@ -6,92 +6,117 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Funkoshop | Item</title>
-    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../../styles/style.css">
 </head>
 
 <body>
     <header>
-        <nav>
-            <picture>
+        <nav class="navbar container">
+            <picture class="navbar__logo">
                 <a href="../../index.html">
-                    <img src="/img/branding/logo_light_horizontal.svg" class="f-brand" alt="logo funkshop header">
+                    <img src="../../img/branding/logo_light_horizontal.svg" alt="logo funkshop header">
                 </a>
             </picture>
-            <ul>
-                <li>
-                    <a href="">SHOP</a>
+            <ul class="navbar__menu">
+                <li class="navbar__item with__submenu">
+                    <a href="#" class="navbar__link with-icon">SHOP <iconify-icon
+                            icon="tabler:chevron-down"></iconify-icon></a>
+                    <ul class="submenu">
+                        <li class="submenu__link">
+                            <a href="" class="submenu__item">Funkos</a>
+                        </li>
+                        <li class="submenu__link">
+                            <a href="" class="submenu__item">Remeras</a>
+                        </li>
+                        <li class="submenu__link">
+                            <a href="" class="submenu__item">Llaveros</a>
+                        </li>
+                    </ul>
                 </li>
-                <li>
-                    <a href="">CONTACTO</a>
+                <li class="navbar__item">
+                    <a href="" class="navbar__link">CONTACTO</a>
                 </li>
-                <li>
-                    <a href="">LOGIN</a>
+                <li class="navbar__item">
+                    <a href="./pages/admin/login.html" class="navbar__link">LOGIN</a>
                 </li>
-                <li>
-                    <a href=""><img src="/img/icons/cart-icon.svg" alt="icono de carrito"></a>
+                <li class="navbar__item">
+                    <a class="navbar__cart"><img src="../../img/icons/cart-icon.svg" alt="icono de carrito"></a>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section>
-            <article>
-                <p>STAR WARS</p>
-                <h1>BABY YODA BLUEBALL</h1>
-                <p>Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga, edición limitada.</p>
-                <p>$ 1799,99.-</p>
-                <p>0</p><input type="button" value="Agregar al Carrito">
-                <p><a href="">Ver métodos de pago</a> - 3 CUOTAS SIN INTERÉS</p>
-            </article>
+    <main class="main-container">
+        <section class="collection container">
             <picture>
-                <img src="/img/star-wars/baby-yoda-1.webp" alt="Funko star wars baby yoda">
+                <img src="../../img/star-wars/baby-yoda-1.webp" alt="Funko star wars baby yoda">
             </picture>
+            <article class="collection__content">
+                <p>STAR WARS</p>
+                <h3 class="collection__title-item">BABY YODA BLUEBALL</h3>
+                <p class="collection__text-item">Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga, edición limitada.</p>
+                <p class="collection__price">$ 1799,99.-</p>
+                <p>0</p><input type="button" value="Agregar al Carrito" class="collection__btn">
+                <p class="collection__promo"><a class="collection__promo-link" href="">Ver métodos de pago</a> - 3 CUOTAS SIN INTERÉS</p>
+            </article>
+
         </section>
-        <section>
-            <h2>PRODUCTOS RELACIONADOS</h2>
-            <ul>
-                <li>
-                    <article>
-                        <a href="">
-                            <picture>
-                                <img src="/img/star-wars/trooper-1.webp" alt="Funko star wars trooper">
+        <section class="slider container">
+            <h2 class="slider__title">PRODUCTOS RELACIONADOS</h2>
+            <ul class="slider__items">
+                <li class="slider__item">
+                    <article class="card-item">
+                        <a class="card-item__link" href="">
+                            <picture class="card-item__cover">
+                                <span class="card-item__tag">Nuevo</span>
+                                <img class="card-item__img--front" src="../../img/star-wars/trooper-1.webp"
+                                    alt="Funko star wars trooper">
+                                <img class="card-item__img--back" src="../../img/star-wars/trooper-box.webp"
+                                    alt="Funko star wars trooper en caja">
                             </picture>
-                            <div>
-                                <p>STAR WARS</p>
-                                <h4>STORMTROOPER LIGHTSABER</h4>
-                                <p>$ 1799,99.-</p>
-                                <p>3 CUOTAS SIN INTERÉS</p>
+                            <div class="card-item__content">
+                                <p class="card-item__licence">STAR WARS</p>
+                                <h4 class="card-item__name">STORMTROOPER LIGHTSABER</h4>
+                                <p class="card-item__price">$ 1799,99.-</p>
+                                <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
                             </div>
                         </a>
                     </article>
                 </li>
-                <li>
-                    <article>
-                        <a href="">
-                            <picture>
-                                <img src="/img/pokemon/pidgeotto-1.webp" alt="Funko pokemon pidgeotto">
+                <li class="slider__item">
+                    <article class="card-item">
+                        <a class="card-item__link" href="">
+                            <picture class="card-item__cover">
+                                <span class="card-item__tag">Nuevo</span>
+                                <img class="card-item__img--front" src="../../img/pokemon/pidgeotto-1.webp"
+                                    alt="Funko pokemon pidgeotto">
+                                <img class="card-item__img--back" src="../../img/pokemon/pidgeotto-box.webp"
+                                    alt="Funko pokemon pidgeotto en caja">
                             </picture>
-                            <div>
-                                <p>POKEMON</p>
-                                <h4>PIDGEOTTO</h4>
-                                <p>$ 1799,99.-</p>
-                                <p>3 CUOTAS SIN INTERÉS</p>
+                            <div class="card-item__content">
+                                <p class="card-item__licence">POKEMON</p>
+                                <h4 class="card-item__name">PIDGEOTTO</h4>
+                                <p class="card-item__price">$ 1799,99.-</p>
+                                <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
                             </div>
                         </a>
                     </article>
                 </li>
-                <li>
-                    <article>
-                        <a href="">
-                            <picture>
-                                <img src="/img/harry-potter/luna-1.webp" alt="Funko harry potter luna">
+                <li class="slider__item">
+                    <article class="card-item">
+                        <a class="card-item__link" href="">
+                            <picture class="card-item__cover">
+                                <span class="card-item__tag">Nuevo</span>
+                                <img class="card-item__img--front" src="../../img/harry-potter/luna-1.webp"
+                                    alt="Funko harry potter luna">
+                                <img class="card-item__img--back" src="../../img/harry-potter/luna-box.webp"
+                                    alt="Funko harry potter luna en caja">
                             </picture>
-                            <div>
-                                <p>HARRY POTTER</p>
-                                <h4>LUNA LOVEGOOD LION MASK</h4>
-                                <p>$ 1799,99.-</p>
-                                <p>3 CUOTAS SIN INTERÉS</p>
+                            <div class="card-item__content">
+                                <p class="card-item__licence">HARRY POTTER</p>
+                                <h4 class="card-item__name">LUNA LOVEGOOD LION MASK</h4>
+                                <p class="card-item__price">$ 1799,99.-</p>
+                                <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
                             </div>
                         </a>
                     </article>
@@ -100,29 +125,28 @@
         </section>
     </main>
 
-    <footer>
-        <section>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="">SHOP</a>
-                    </li>
-                    <li>
-                        <a href="">REGISTRARSE</a>
-                    </li>
-                    <li>
-                        <a href="">INGRESAR</a>
-                    </li>
-                    <li>
-                        <a href="">CONTACTO</a>
-                    </li>
-                </ul>
-                <picture>
-                    <img src="/img/branding/isotype.svg" alt="logo funkshop">
-                </picture>
-            </nav>
-        </section>
-        <p class="copy">All rights reserved 2023 - Funkoshop &copy;</p>
+    <footer class="footer">
+        <nav class="navbar container">
+            <ul class="navbar__item">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="">SHOP</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="">REGISTRARSE</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="">INGRESAR</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="">CONTACTO</a>
+                </li>
+            </ul>
+            <picture>
+                <img src="../../img/branding/isotype.svg" alt="logo funkshop">
+            </picture>
+        </nav>
+        <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
 </body>
 </html>

@@ -235,12 +235,46 @@ header {
     font-weight: 500;
 }
 
+.collection__title-item {
+    font-size: var(--font-jumbo);
+    font-weight: 700;
+}
+
 .collection__text {
     font-family: var(--alternative-font);
     font-size: var(--font-large);
     font-weight: 300;
     border-bottom: 2px solid var(--primary-solid);
     padding-bottom: var(--spacing-20);
+}
+
+.collection__text-item {
+    font-family: var(--base-font);
+    font-size: var(--font-large);
+    font-weight: 400;
+    padding-bottom: var(--spacing-20);
+}
+
+.collection__price {
+    font-size: var(--font-jumbo);
+}
+
+.collection__btn {
+    font-size: var(--font-xsmall);
+    background-color: var(--primary-solid);
+    color: var(--light-font-solid);
+    padding: var(--spacing-8) var(--spacing-12);
+    border: none;
+}
+
+.collection__promo {
+    font-size: var(--font-xsmall);
+    color: var(--seconday-solid);
+    font-weight: 700;
+}
+
+.collection__promo-link {
+    text-decoration: underline;
 }
 
 .collection__link {
